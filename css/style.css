@@ -1,3 +1,22 @@
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+/* Переменные */
+:root {
+  --color-link: #2196f3;
+  --text: #212121;
+  --color-text: #ffffff;
+  --color-p: #757575;
+  --font-family: Roboto;
+  --font-size: 14px;
+  --font-style: normal;
+  --font-logo: Raleway;
+  --font-size-logo: 26px;
+}
+
 /* Body Portfolio.html */
 .body-portfolio {
   color: #e5e5e5;
@@ -46,6 +65,9 @@
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: 0.02em;
+  margin-top: 32px;
+  margin-bottom: 32px;
+  display: block;
 }
 .point-nav:focus,
 .point-nav:hover {
@@ -60,6 +82,9 @@
   line-height: 1.1;
   font-style: var(--font-style);
   font-size: var(--font-size);
+  margin-top: 32px;
+  margin-bottom: 32px;
+  display: block;
 }
 .address:focus,
 .address:hover {
@@ -167,6 +192,7 @@ a {
   height: 50px;
   width: 200px;
   border-radius: 4px;
+  margin-bottom: 200px;
 }
 .button:hover,
 .button:focus {
@@ -193,7 +219,7 @@ a {
   letter-spacing: 0.06em;
   /* text-align: center; */
   padding-top: 200px;
-  margin-bottom: 30px;
+  padding-bottom: 30px;
 }
 /* Frame 1. Section 1 */
 .advantage p {
@@ -232,7 +258,7 @@ a {
   text-align: center;
 }
 .work {
-  margin-top: 94px;
+  margin-top: 106px;
 }
 .bg-section {
   /* background-color: #e5e5e5; */
@@ -279,35 +305,17 @@ a {
   font-family: "Roboto", "Raleway", "Arial", sans-serif;
 }
 
-/* Переменные */
-:root {
-  --color-link: #2196f3;
-  --text: #212121;
-  --color-text: #ffffff;
-  --color-p: #757575;
-  --font-family: Roboto;
-  --font-size: 14px;
-  --font-style: normal;
-  --font-logo: Raleway;
-  --font-size-logo: 26px;
-}
-
 .container {
   width: 1200px;
   margin-left: auto;
   margin-right: auto;
 }
 
-* {
-  box-sizing: border-box;
-  margin: 0px;
-  padding: 0px;
-}
-
 .list-work {
   display: flex;
   justify-content: space-between;
-  margin-top: 50px;
+  padding-top: 50px;
+  margin-bottom: 82px;
 }
 .team {
   display: flex;
@@ -316,19 +324,54 @@ a {
   padding-bottom: 94px;
 }
 
-.bg-card-team {
-  background-color: var(--color-text);
-  margin-top: -4px;
-}
-
-.bg-card-team p {
-  color: rgb(60, 255, 0);
-  /* padding-top: 10px; */
-  /* padding-bottom: 30px; */
-}
 .team li {
   background-color: var(--color-text);
   display: inline-block;
   width: 270px;
   height: 368px;
+}
+
+.footer-place {
+  padding-top: 60px;
+}
+.place {
+  margin-top: 20px;
+}
+
+/* HEADER */
+
+.menu-nav {
+  display: flex;
+}
+
+.menu-nav li:last-child {
+  margin-right: 0px;
+}
+
+.menu-nav li + li {
+  margin-left: 50px;
+}
+
+.list-connection {
+  display: flex;
+}
+
+.list-connection li + li {
+  margin-left: 50px;
+}
+
+.list-menu {
+  display: flex;
+}
+
+.nav-place {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-web {
+  margin-top: 24px;
+  margin-bottom: 25px;
+  display: block;
 }
