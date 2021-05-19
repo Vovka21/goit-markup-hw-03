@@ -25,6 +25,7 @@
 
 .page-header {
   background-color: var(--color-text);
+  border-bottom: 1px solid #ececec;
 }
 
 /* WebStudio */
@@ -65,8 +66,8 @@
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: 0.02em;
-  margin-top: 32px;
-  margin-bottom: 32px;
+  padding-top: 32px;
+  padding-bottom: 32px;
   display: block;
 }
 .point-nav:focus,
@@ -82,8 +83,8 @@
   line-height: 1.1;
   font-style: var(--font-style);
   font-size: var(--font-size);
-  margin-top: 32px;
-  margin-bottom: 32px;
+  padding-top: 32px;
+  padding-bottom: 32px;
   display: block;
 }
 .address:focus,
@@ -109,7 +110,7 @@
   background-color: #f5f4fa;
   cursor: pointer;
   height: 38px;
-  border-radius: 4px;
+  /* border-radius: 4px; */
   border-color: #f5f4fa;
   padding: 6px 22px;
 }
@@ -117,8 +118,8 @@
 .filter {
   display: flex;
   justify-content: center;
-  margin-top: 94px;
-  margin-bottom: 34px;
+  padding-top: 94px;
+  padding-bottom: 50px;
 }
 
 .filter li + li {
@@ -150,7 +151,7 @@ h3 {
   font-size: 16px;
   font-style: var(--font-style);
   font-weight: 400;
-  line-height: 1.9px;
+  line-height: 1.9;
   letter-spacing: 0.03em;
 }
 
@@ -180,8 +181,9 @@ h3 {
   background-color: #2f303a;
   margin-left: auto;
   margin-right: auto;
-  height: 252px;
   width: 1600px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 .address-map:focus,
 .address-map:hover {
@@ -209,7 +211,6 @@ a {
   height: 50px;
   width: 200px;
   border-radius: 4px;
-  margin-bottom: 200px;
 }
 .button:hover,
 .button:focus {
@@ -225,6 +226,8 @@ a {
   text-align: center;
   margin-left: auto;
   margin-right: auto;
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 .h1 {
   color: var(--color-text);
@@ -234,9 +237,7 @@ a {
   font-weight: 900;
   line-height: 1.4;
   letter-spacing: 0.06em;
-  /* text-align: center; */
-  padding-top: 200px;
-  padding-bottom: 30px;
+  margin-bottom: 30px;
 }
 /* Frame 1. Section 1 */
 .advantage p {
@@ -256,11 +257,15 @@ a {
   font-weight: 700;
   line-height: 1.2;
   letter-spacing: 0.03em;
+  padding-bottom: 10px;
 }
 .advantage {
   display: flex;
-  margin-top: 94px;
 }
+.advantage li {
+  width: 270px;
+}
+
 /* Frame 1. Section 2 */
 .bg-team h2,
 .work {
@@ -273,9 +278,6 @@ a {
   letter-spacing: 0.03em;
   text-align: center;
 }
-.work {
-  margin-top: 106px;
-}
 
 /* Наша команда */
 .team h3 {
@@ -286,7 +288,6 @@ a {
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: 0.03em;
-  padding-top: 30px;
   text-align: center;
 }
 .team p {
@@ -298,7 +299,6 @@ a {
   line-height: 1;
   letter-spacing: 0.03em;
   padding-top: 10px;
-  padding-bottom: 30px;
   text-align: center;
 }
 .bg-team {
@@ -307,8 +307,6 @@ a {
   width: 1600px;
   margin-left: auto;
   margin-right: auto;
-}
-.bg-team h2 {
   padding-top: 94px;
 }
 
@@ -325,8 +323,7 @@ a {
 .list-work {
   display: flex;
   justify-content: space-between;
-  padding-top: 50px;
-  margin-bottom: 82px;
+  margin-top: 50px;
 }
 .team {
   display: flex;
@@ -342,9 +339,6 @@ a {
   height: 368px;
 }
 
-.footer-place {
-  padding-top: 60px;
-}
 .place {
   margin-top: 20px;
 }
@@ -379,7 +373,6 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 1px solid #ececec;
 }
 
 .logo-web {
@@ -408,4 +401,28 @@ a {
 .card {
   padding: 20px 24px;
   margin-top: -5px;
+}
+.card h3 {
+  padding-bottom: 4px;
+}
+
+.place li {
+  padding-bottom: 9px;
+}
+.place li:last-child {
+  padding-bottom: 0px;
+}
+
+.section1 {
+  padding-top: 94px;
+}
+.section2 {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.our-team {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  margin-top: -4px;
 }
