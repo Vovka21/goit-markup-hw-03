@@ -26,7 +26,6 @@
 .page-header {
   margin-left: auto;
   margin-right: auto;
-  width: 1600px;
   background-color: var(--color-text);
   border-bottom: 1px solid #ececec;
 }
@@ -121,8 +120,8 @@
 .filter {
   display: flex;
   justify-content: center;
-  padding-top: 94px;
-  padding-bottom: 50px;
+  margin-top: 94px;
+  margin-bottom: 50px;
 }
 
 .filter li + li {
@@ -161,7 +160,7 @@ h3 {
 .projects {
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: 94px;
+  /* margin-bottom: 94px; */
 }
 
 /* Footer */
@@ -184,7 +183,6 @@ h3 {
   background-color: #2f303a;
   margin-left: auto;
   margin-right: auto;
-  width: 1600px;
   padding-top: 60px;
   padding-bottom: 60px;
 }
@@ -213,7 +211,7 @@ a {
   color: var(--color-text);
   height: 50px;
   width: 200px;
-  border-radius: 4px;
+  /* border-radius: 4px; */
 }
 .button:hover,
 .button:focus {
@@ -225,7 +223,6 @@ a {
 .bg-h1 {
   background-color: #2f303a;
   height: 600px;
-  width: 1600px;
   text-align: center;
   margin-left: auto;
   margin-right: auto;
@@ -267,8 +264,11 @@ a {
 }
 .advantage li {
   width: 270px;
+  margin-right: 30px;
 }
-
+.advantage li:last-child {
+  margin-right: 0;
+}
 /* Frame 1. Section 2 */
 .bg-team h2,
 .work {
@@ -306,8 +306,8 @@ a {
 }
 .bg-team {
   background-color: #f5f4fa;
-  height: 648px;
-  width: 1600px;
+  /* height: 648px; */
+
   margin-left: auto;
   margin-right: auto;
   padding-top: 94px;
@@ -321,6 +321,8 @@ a {
   width: 1200px;
   margin-left: auto;
   margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .list-work {
@@ -328,6 +330,14 @@ a {
   justify-content: space-between;
   margin-top: 50px;
 }
+
+.list-work li {
+  margin-right: 30px;
+}
+.list-work li:last-child {
+  margin-right: 0px;
+}
+
 .team {
   display: flex;
   justify-content: space-between;
@@ -340,8 +350,11 @@ a {
   display: inline-block;
   width: 270px;
   height: 368px;
+  margin-right: 30px;
 }
-
+.team li:last-child {
+  margin-right: 0px;
+}
 .place {
   margin-top: 20px;
 }
@@ -374,7 +387,7 @@ a {
 
 .nav-place {
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   align-items: center;
 }
 
@@ -388,9 +401,9 @@ a {
   width: 370px;
   margin-right: 30px;
   margin-bottom: 30px;
-  border-left: 1px solid #eeeeee;
+  /* border-left: 1px solid #eeeeee;
   border-right: 1px solid #eeeeee;
-  border-bottom: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee; */
   display: inline-table;
 }
 
@@ -428,4 +441,12 @@ a {
   padding-top: 30px;
   padding-bottom: 30px;
   margin-top: -4px;
+}
+
+.link-menu {
+  margin-left: 93px;
+  margin-right: 331px;
+}
+.portfolio {
+  padding-bottom: 94px;
 }
